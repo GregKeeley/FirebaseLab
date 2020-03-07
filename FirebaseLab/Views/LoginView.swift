@@ -47,13 +47,13 @@ class LoginView: UIView {
     }()
     public lazy var emailTextField: UITextField = {
         let field = UITextField()
-        field.backgroundColor = #colorLiteral(red: 1.0, green: 1.0, blue: 1.0, alpha: 1.0)
+        field.backgroundColor = #colorLiteral(red: 0, green: 0, blue: 0, alpha: 0)
         field.placeholder = " Enter email address"
         return field
     }()
     public lazy var passwordTextField: UITextField = {
         let field = UITextField()
-        field.backgroundColor = #colorLiteral(red: 1.0, green: 1.0, blue: 1.0, alpha: 1.0)
+        field.backgroundColor = #colorLiteral(red: 0, green: 0, blue: 0, alpha: 0)
         field.placeholder = " Enter password"
         return field
     }()
