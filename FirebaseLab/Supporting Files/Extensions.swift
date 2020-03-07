@@ -21,3 +21,15 @@ extension String {
         return image
     }
 }
+
+extension UIViewController {
+    
+    private static func resetWindow(with rootviewController: UIViewController) {
+        guard let scene = UIApplication.shared.connectedScenes.first,
+            let sceneDelegate = scene.delegate as? SceneDelegate,
+            let window = sceneDelegate.window else {
+                fatalError("Could not reset window rootViewController")
+        }
+        window.rootViewController = rootviewController
+    }
+}

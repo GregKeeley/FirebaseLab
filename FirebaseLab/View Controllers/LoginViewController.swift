@@ -10,21 +10,21 @@ import UIKit
 
 class LoginViewController: UIViewController {
 
-    private let loginView = LoginView()
     
+    private let loginView = LoginView()
     override func loadView() {
         view = loginView
     }
-    
     override func viewDidLoad() {
         super.viewDidLoad()
         view.backgroundColor = #colorLiteral(red: 0.2392156869, green: 0.6745098233, blue: 0.9686274529, alpha: 1)
         configureUI()
     }
+    
     private func configureUI() {
         loginView.iconLabel.contentMode = .center
         loginView.iconLabel.backgroundColor = .clear
         loginView.iconLabel.layer.cornerRadius = 20
-
     }
+    
 }

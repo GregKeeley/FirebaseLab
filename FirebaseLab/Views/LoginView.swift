@@ -60,8 +60,8 @@ class LoginView: UIView {
     public lazy var loginButton: UIButton = {
         let button = UIButton()
         button.setTitle("Login", for: .normal)
-        button.titleLabel?.textColor = .black
-        button.backgroundColor = .white
+//        button.titleLabel?.textColor = .black
+//        button.backgroundColor = .white
         return button
     }()
     public lazy var signUpButton: UIButton = {
@@ -96,7 +96,7 @@ class LoginView: UIView {
         
             bkgdView.centerYAnchor.constraint(equalTo: centerYAnchor),
             bkgdView.centerXAnchor.constraint(equalTo: centerXAnchor),
-            bkgdView.heightAnchor.constraint(equalTo: safeAreaLayoutGuide.heightAnchor, multiplier: 0.80),
+            bkgdView.heightAnchor.constraint(equalTo: safeAreaLayoutGuide.heightAnchor, multiplier: 0.70),
             bkgdView.widthAnchor.constraint(equalTo: safeAreaLayoutGuide.widthAnchor, multiplier: 0.80)
         
         ])
@@ -173,7 +173,7 @@ class LoginView: UIView {
         NSLayoutConstraint.activate([
         
             loginButton.topAnchor.constraint(equalTo: passwordTextField.bottomAnchor, constant: 40),
-            loginButton.leadingAnchor.constraint(equalTo: passwordTextField.leadingAnchor)
+            loginButton.leadingAnchor.constraint(equalTo: passwordTextField.leadingAnchor, constant: 20)
             
         ])
     }
@@ -183,7 +183,7 @@ class LoginView: UIView {
         NSLayoutConstraint.activate([
         
             signUpButton.topAnchor.constraint(equalTo: passwordTextField.bottomAnchor, constant: 40),
-            signUpButton.trailingAnchor.constraint(equalTo: passwordTextField.trailingAnchor)
+            signUpButton.trailingAnchor.constraint(equalTo: passwordTextField.trailingAnchor, constant: -20)
             
         ])
     }

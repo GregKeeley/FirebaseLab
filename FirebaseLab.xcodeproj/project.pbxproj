@@ -20,7 +20,7 @@
 		C11C2F3A2409C4EA0097DBB3 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C11C2F392409C4EA0097DBB3 /* ViewController.swift */; };
 		C11C2F3F2409C4EC0097DBB3 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = C11C2F3E2409C4EC0097DBB3 /* Assets.xcassets */; };
 		C11C2F422409C4EC0097DBB3 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C11C2F402409C4EC0097DBB3 /* LaunchScreen.storyboard */; };
-		C1705A4A241411D200F3981D /* String+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = C1705A49241411D200F3981D /* String+Extension.swift */; };
+		C1705A4A241411D200F3981D /* Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = C1705A49241411D200F3981D /* Extensions.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -41,7 +41,7 @@
 		C11C2F3E2409C4EC0097DBB3 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		C11C2F412409C4EC0097DBB3 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		C11C2F432409C4EC0097DBB3 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		C1705A49241411D200F3981D /* String+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "String+Extension.swift"; sourceTree = "<group>"; };
+		C1705A49241411D200F3981D /* Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Extensions.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -69,7 +69,7 @@
 			children = (
 				C11C2F352409C4EA0097DBB3 /* AppDelegate.swift */,
 				C11C2F372409C4EA0097DBB3 /* SceneDelegate.swift */,
-				C1705A49241411D200F3981D /* String+Extension.swift */,
+				C1705A49241411D200F3981D /* Extensions.swift */,
 			);
 			path = "Supporting Files";
 			sourceTree = "<group>";
@@ -267,7 +267,7 @@
 				C103AE16240FD29500702349 /* MainView.swift in Sources */,
 				C103AE18240FD2A100702349 /* ProfileView.swift in Sources */,
 				C103AE1C240FD2D300702349 /* ProfileViewController.swift in Sources */,
-				C1705A4A241411D200F3981D /* String+Extension.swift in Sources */,
+				C1705A4A241411D200F3981D /* Extensions.swift in Sources */,
 				C11C2F382409C4EA0097DBB3 /* SceneDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
