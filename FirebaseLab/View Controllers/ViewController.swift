@@ -7,6 +7,8 @@
 //
 
 import UIKit
+import FirebaseAuth
+import FirebaseStorage
 
 class MainViewController: UIViewController {
     

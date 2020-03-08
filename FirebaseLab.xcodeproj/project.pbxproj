@@ -20,6 +20,7 @@
 		C11C2F3A2409C4EA0097DBB3 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C11C2F392409C4EA0097DBB3 /* ViewController.swift */; };
 		C11C2F3F2409C4EC0097DBB3 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = C11C2F3E2409C4EC0097DBB3 /* Assets.xcassets */; };
 		C11C2F422409C4EC0097DBB3 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C11C2F402409C4EC0097DBB3 /* LaunchScreen.storyboard */; };
+		C164B08F24157EFC007C12ED /* StorageService.swift in Sources */ = {isa = PBXBuildFile; fileRef = C164B08E24157EFC007C12ED /* StorageService.swift */; };
 		C1705A4A241411D200F3981D /* Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = C1705A49241411D200F3981D /* Extensions.swift */; };
 /* End PBXBuildFile section */
 
@@ -41,6 +42,7 @@
 		C11C2F3E2409C4EC0097DBB3 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		C11C2F412409C4EC0097DBB3 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		C11C2F432409C4EC0097DBB3 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		C164B08E24157EFC007C12ED /* StorageService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StorageService.swift; sourceTree = "<group>"; };
 		C1705A49241411D200F3981D /* Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Extensions.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -98,6 +100,7 @@
 			isa = PBXGroup;
 			children = (
 				C103AE1E240FDBAE00702349 /* AuthenticationSession.swift */,
+				C164B08E24157EFC007C12ED /* StorageService.swift */,
 			);
 			path = FirebaseServices;
 			sourceTree = "<group>";
@@ -268,6 +271,7 @@
 				C103AE18240FD2A100702349 /* ProfileView.swift in Sources */,
 				C103AE1C240FD2D300702349 /* ProfileViewController.swift in Sources */,
 				C1705A4A241411D200F3981D /* Extensions.swift in Sources */,
+				C164B08F24157EFC007C12ED /* StorageService.swift in Sources */,
 				C11C2F382409C4EA0097DBB3 /* SceneDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
