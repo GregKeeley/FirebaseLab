@@ -47,12 +47,13 @@ class ProfileViewController: UIViewController {
         settingsView.emailTextField.delegate = self
         settingsView.phoneNumberTextField.delegate = self
         settingsView.userNameTextField.delegate = self
+        settingsView.changePhotoButton.addTarget(self, action: #selector(editProfilePhotoButtonPressed(_:)), for: .touchUpInside)
     }
     
     @IBAction func editPhotoButtonPressed(_ sender: UIButton) {
         print("photo change")
     }
-    @IBAction func editProfilePhotoButtonPressed() {
+    @IBAction func editProfilePhotoButtonPressed(_ sender: UIButton) {
         let alertController = UIAlertController(title: "Choose Photo Option", message: nil, preferredStyle: .actionSheet)
         let cameraAction = UIAlertAction(title: "Camera", style: .default) { alertAction in
             self.imagePickerController.sourceType = .camera

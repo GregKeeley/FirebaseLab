@@ -48,7 +48,7 @@ class LoginViewController: UIViewController {
                         self?.showAlert(title: "Something went wrong", message: "\(error.localizedDescription)")
                     }
                 case .success:
-                    print("SIgned in")
+                    print("Signed in")
                     DispatchQueue.main.async {
                         self?.navigateToMainView()
                     }
