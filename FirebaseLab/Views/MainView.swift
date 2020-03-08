@@ -10,6 +10,12 @@ import UIKit
 
 class MainView: UIView {
     
+    public lazy var gradientView: GradientView = {
+        let view = GradientView()
+        view.layoutSubviews()
+        return view
+    }()
+    
     public lazy var greetingLabel: UILabel = {
         let label = UILabel()
         label.text = "Welcome!"
@@ -63,6 +69,7 @@ class MainView: UIView {
         commonInit()
     }
     private func commonInit() {
+        gradientConstraints()
         greetingLabelConstraint()
         userNameLabelConstraint()
         phoneLabelConstraint()
@@ -130,6 +137,16 @@ class MainView: UIView {
             profileSettingsButton.bottomAnchor.constraint(equalTo: safeAreaLayoutGuide.bottomAnchor),
             profileSettingsButton.trailingAnchor.constraint(equalTo: trailingAnchor, constant: -10)
             
+        ])
+    }
+    private func gradientConstraints() {
+        addSubview(gradientView)
+        gradientView.translatesAutoresizingMaskIntoConstraints = false
+        NSLayoutConstraint.activate([
+            gradientView.topAnchor.constraint(equalTo: topAnchor),
+            gradientView.leadingAnchor.constraint(equalTo: leadingAnchor),
+            gradientView.trailingAnchor.constraint(equalTo: trailingAnchor),
+            gradientView.bottomAnchor.constraint(equalTo: bottomAnchor)
         ])
     }
 }

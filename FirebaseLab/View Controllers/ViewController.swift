@@ -18,9 +18,16 @@ class MainViewController: UIViewController {
     }
     override func viewDidLoad() {
         super.viewDidLoad()
-        view.backgroundColor = #colorLiteral(red: 0.3333333433, green: 0.3333333433, blue: 0.3333333433, alpha: 1)
         getFonts()
         loadUI()
+    }
+    override func viewWillAppear(_ animated: Bool) {
+                navigationController?.setNavigationBarHidden(true, animated: animated)
+
+    }
+    override func viewWillDisappear(_ animated: Bool) {
+                navigationController?.setNavigationBarHidden(false, animated: animated)
+
     }
     private func loadUI() {
         mainView.profileSettingsButton.addTarget(self, action: #selector(profileSettingsPressed(_:)), for: .touchUpInside)

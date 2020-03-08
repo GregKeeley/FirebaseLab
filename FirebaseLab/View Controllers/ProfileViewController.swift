@@ -17,6 +17,13 @@ class ProfileViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         view.backgroundColor = #colorLiteral(red: 0.3098039329, green: 0.01568627544, blue: 0.1294117719, alpha: 1)
+        setupUI()
     }
-
+    private func setupUI() {
+        settingsView.changePhotoButton.addTarget(self, action: #selector(editPhotoButtonPressed(_:)), for: .touchUpInside)
+    }
+    @IBAction func editPhotoButtonPressed(_ sender: UIButton) {
+        print("photo change")
+    }
+    
 }

@@ -42,3 +42,27 @@ extension UIViewController {
         present(alertController, animated: true, completion: nil)
     }
 }
+extension UIColor {
+  static func generateRandomColor() -> UIColor {
+      let redValue = CGFloat.random(in: 0...1)
+      let greenValue = CGFloat.random(in: 0...1)
+      let blueValue = CGFloat.random(in: 0...1)
+      let randomColor = UIColor(red: redValue, green: greenValue, blue: blueValue, alpha: 1.0)
+      return randomColor
+  }
+}
+@IBDesignable
+class GradientView: UIView {
+  @IBInspectable var cornerRadius: CGFloat = 0
+  
+  override func layoutSubviews() {
+    super.layoutSubviews()
+    layer.masksToBounds = true
+    layer.cornerRadius = cornerRadius
+    let gradientLayer = CAGradientLayer()
+    let colors = [UIColor.generateRandomColor().cgColor, UIColor.generateRandomColor().cgColor]
+    gradientLayer.frame = bounds
+    gradientLayer.colors = colors
+    layer.addSublayer(gradientLayer)
+  }
+}

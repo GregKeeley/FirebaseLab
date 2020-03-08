@@ -53,7 +53,7 @@ class ProfileView: UIView {
         image.image = UIImage(systemName: "person")
         return image
     }()
-    public lazy var changeProfileButton: UIButton = {
+    public lazy var changePhotoButton: UIButton = {
         let button = UIButton()
         button.setImage(UIImage(systemName: "pencil"), for: .normal)
         button.tintColor = .blue
@@ -161,14 +161,14 @@ class ProfileView: UIView {
         ])
     }
     private func changeProfileButtonConstraints() {
-        addSubview(changeProfileButton)
-        changeProfileButton.translatesAutoresizingMaskIntoConstraints = false
+        addSubview(changePhotoButton)
+        changePhotoButton.translatesAutoresizingMaskIntoConstraints = false
         NSLayoutConstraint.activate([
 
-            changeProfileButton.topAnchor.constraint(equalTo: profileImageView.bottomAnchor, constant: 10),
-            changeProfileButton.centerXAnchor.constraint(equalTo: profileImageView.centerXAnchor),
-            changeProfileButton.heightAnchor.constraint(equalTo: profileImageView.widthAnchor, multiplier: 0.5),
-            changeProfileButton.widthAnchor.constraint(equalTo: profileImageView.widthAnchor, multiplier: 0.5)
+            changePhotoButton.topAnchor.constraint(equalTo: profileImageView.bottomAnchor, constant: 10),
+            changePhotoButton.centerXAnchor.constraint(equalTo: profileImageView.centerXAnchor),
+            changePhotoButton.heightAnchor.constraint(equalTo: profileImageView.widthAnchor, multiplier: 0.5),
+            changePhotoButton.widthAnchor.constraint(equalTo: profileImageView.widthAnchor, multiplier: 0.5)
         ])
     }
 }
